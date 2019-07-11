@@ -7,7 +7,9 @@ def nyc_pigeon_organizer(pegion_data)
       names.each do |name|
        if organized_data[name]
          binding.pry
-         organized_data[name][key] = []
+         organized_data[name][category] ||= []
+         #||= means or equal if the element to the left already has a value we fo not touch it. 
+         
      else
         organized_data[name] = {:color => [], :gender => [], :lives => []}
     end                            
