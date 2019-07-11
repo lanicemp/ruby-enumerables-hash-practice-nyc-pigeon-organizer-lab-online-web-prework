@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(pegion_data)
          organized_data[name][category] << option_color
      else
         organized_data[name] = {:color => [], :gender => [], :lives => []}
-        organized_data
+        
     end                            
     
       end
