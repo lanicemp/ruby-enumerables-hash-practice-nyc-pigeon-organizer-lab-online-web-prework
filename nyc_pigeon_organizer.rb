@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(pegion_data)
     options.each do |option, names|
       names.each do |name|
        if organized_data[name]
-         
+         organized_data[:color][]
      else
         organized_data[name] = {:color => [], :gender => [], :lives => []}
     end                            
