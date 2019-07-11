@@ -1,3 +1,8 @@
+require 'pry'
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  data.each do  |data|
+   # if data{color, gender, lives}
+     binding.pry 
+    # write your code here!
+end
 end
