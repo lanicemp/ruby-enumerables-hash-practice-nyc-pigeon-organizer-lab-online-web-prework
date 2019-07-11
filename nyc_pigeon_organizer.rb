@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(pegion_data)
     options.each do |option_color, names|
       names.each do |name|
        if organized_data[name]
-         binding.pry
+         #binding.pry
          organized_data[name][category] ||= []
          #||= means or equal if the element to the left already has a value we fo not touch it. 
          organized_data[name][category] << option_color
