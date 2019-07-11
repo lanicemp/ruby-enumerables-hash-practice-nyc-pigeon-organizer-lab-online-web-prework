@@ -9,10 +9,11 @@ def nyc_pigeon_organizer(pegion_data)
          #binding.pry
          organized_data[name][category] ||= []
          #||= means or equal if the element to the left already has a value we fo not touch it. 
-         organized_data[name][category] << option_color
+         organized_data[name][category] << option_color.to_s
+         #to_s converts symbol into string
      else
         organized_data[name] = {:color => [], :gender => [], :lives => []}
-        organized_data[name][category] << option_color
+        organized_data[name][category] << option_color.to_s
     end                            
     
       end
